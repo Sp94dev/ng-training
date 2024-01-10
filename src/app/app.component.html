@@ -1,2 +1,6 @@
-<h1>Root component</h1>
-<app-test></app-test>
+<div class="p-4 flex flex-row justify-between">
+  <p-button label="Styling" [routerLink]="['/styling']"></p-button>
+  <a [routerLink]="['/styling']" class="hover:bg-teal-400">Styling</a>
+</div>
+<hr class="py-2" />
+<router-outlet></router-outlet>

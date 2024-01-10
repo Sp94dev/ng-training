@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { ParentComponent } from './parent-child/parent/parent.component';
+import { StylingComponent } from './styling/styling.component';
 
 export const routes: Routes = [
   {
@@ -7,7 +8,11 @@ export const routes: Routes = [
     component: ParentComponent,
   },
   {
-    path: '*',
+    path: 'styling',
+    component: StylingComponent,
+  },
+  {
+    path: '**',
     redirectTo: 'parent-child',
   },
 ];
