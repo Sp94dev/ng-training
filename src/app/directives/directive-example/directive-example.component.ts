@@ -11,10 +11,14 @@ import { UnlessStructuralDirective } from '../unless.structural.directive';
     HighlightAttributeDirective,
     UnlessStructuralDirective,
   ],
-  template: ` <p appHighlight>AttributeDirective</p>`,
+  template: `
+    <div>
+      <p [appUnless]="condition">Structural directive</p>
+    </div>
+  `,
   styleUrl: './directive-example.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DirectiveExampleComponent {
-  condition = false;
+  condition = true;
 }
