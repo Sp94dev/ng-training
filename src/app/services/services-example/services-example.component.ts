@@ -4,6 +4,7 @@ import { AComponent as ComponentA } from './features/shared-state/a-component/a.
 import { BComponent as BComponent } from './features/shared-state/b-component/b.component';
 import { SingletonComponent } from './features/singleton/singleton.component';
 import { SharedStateComponent } from './features/shared-state/shared-state.component';
+import { WSExample } from '../rxjs/real-time';
 
 @Component({
   selector: 'app-services-example',
@@ -19,4 +20,8 @@ import { SharedStateComponent } from './features/shared-state/shared-state.compo
   styleUrl: './services-example.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ServicesExampleComponent {}
+export class ServicesExampleComponent {
+  constructor() {
+    WSExample();
+  }
+}
