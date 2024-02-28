@@ -1,21 +1,19 @@
-
-
 @import "tailwindcss/base" layer(base);
 @import "tailwindcss/components" layer(components);
 @import "tailwindcss/utilities" layer(utilities);
-@import "primeng/resources/themes/lara-light-blue/theme.css" layer(primeng-theme);
+@import "primeng/resources/themes/lara-light-blue/theme.css"
+  layer(primeng-theme);
 @import "primeng/resources/primeng.css" layer(primeng);
 
 @layer tailwind-utilities, primeng, primeng-theme;
-    
 
 @layer tailwind-utilities {
-    @tailwind components;
-    @tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 }
 
 @layer components {
-    .btn {
-        @apply border bg-teal-50 p-2 rounded-sm;
-    }
+  .btn {
+    @apply border bg-blue-300 py-2 px-4 rounded cursor-pointer hover:bg-blue-400;
+  }
 }
