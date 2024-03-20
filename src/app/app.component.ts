@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ParentComponent } from './parent-child/parent/parent.component';
 
+import { AngularQueryDevtools } from '@tanstack/angular-query-devtools-experimental';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
@@ -14,6 +15,7 @@ import { ButtonModule } from 'primeng/button';
     ParentComponent,
     RouterLink,
     ButtonModule,
+    AngularQueryDevtools,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -1,19 +1,19 @@
 import { Routes } from '@angular/router';
-import { ParentComponent } from './parent-child/parent/parent.component';
-import { StylingComponent } from './styling/styling.component';
+import { AngularQueryComponent } from './angular-query/angular-query.component';
 import { DirectiveExampleComponent } from './directives/directive-example/directive-example.component';
-import { ServicesExampleComponent } from './services/services-example/services-example.component';
-import { SignalsComponent } from './services/signals/signals.component';
-import { RoutingComponent } from './routing/routing/routing.component';
+import { ParentComponent } from './parent-child/parent/parent.component';
+import { DeleteComponent } from './routing/routing/components/delete/delete.component';
 import { ExampleOneComponent } from './routing/routing/components/example-one/example-one.component';
 import { ExampleTwoComponent } from './routing/routing/components/example-two/example-two.component';
 import { ExampleWithParamsComponent } from './routing/routing/components/example-with-params/example-with-params.component';
-import { LazyExampleComponent } from './routing/routing/components/lazy-example/lazy-example.component';
-import { ReadComponent } from './routing/routing/components/read/read.component';
-import { deleteGuard, readGuard, writeGuard } from './routing/routing/guards';
-import { WriteComponent } from './routing/routing/components/write/write.component';
-import { DeleteComponent } from './routing/routing/components/delete/delete.component';
 import { NoPermisionComponent } from './routing/routing/components/no-permision/no-permision.component';
+import { ReadComponent } from './routing/routing/components/read/read.component';
+import { WriteComponent } from './routing/routing/components/write/write.component';
+import { deleteGuard, readGuard, writeGuard } from './routing/routing/guards';
+import { RoutingComponent } from './routing/routing/routing.component';
+import { ServicesExampleComponent } from './services/services-example/services-example.component';
+import { SignalsComponent } from './services/signals/signals.component';
+import { StylingComponent } from './styling/styling.component';
 
 export const routes: Routes = [
   {
@@ -35,6 +35,10 @@ export const routes: Routes = [
   {
     path: 'signals',
     component: SignalsComponent,
+  },
+  {
+    path: 'angular-query',
+    component: AngularQueryComponent,
   },
   {
     path: 'routing',

@@ -5,6 +5,8 @@
   <p-button label="Services" [routerLink]="['/services']"></p-button>
   <p-button label="Signals" [routerLink]="['/signals']"></p-button>
   <p-button label="Routing" [routerLink]="['/routing']"></p-button>
+  <p-button label="Angular Query" [routerLink]="['/angular-query']"></p-button>
 </div>
 <hr class="py-2" />
 <router-outlet></router-outlet>
+<angular-query-devtools [initialIsOpen]="false" />
